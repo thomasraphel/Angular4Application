@@ -3,7 +3,7 @@
   "project": {
     "name": "sample-application"
   },
-  "apps": [
+  "apps": [ 
     {
       "root": "src",
       "outDir": "dist",
