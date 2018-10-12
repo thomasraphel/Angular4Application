@@ -21,3 +21,8 @@
 
  <p *ngIf="showServer">The server name using input event binding is : {{serverName}}</p>
 
+ <p *ngIf="showServer ; else noServer">Portion of show no server</p>
+
+<ng-template #noServer>
+    <p>No Server was created</p>
+</ng-template>
