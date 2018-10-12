@@ -19,5 +19,5 @@
   type="text"
   [(ngModel)]="serverName">
 
- <p>The server name using input event binding is : {{serverName}}</p>
+ <p *ngIf="showServer">The server name using input event binding is : {{serverName}}</p>
 

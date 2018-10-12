@@ -23,6 +23,7 @@ export class ServersComponent implements OnInit {
   name : string = "thomas";
   serverCreationStatus : string = "no Server created!";
   serverName : string = "initial server name";
+  showServer : boolean = false;
 
   onCreateServer(){
     this.serverCreationStatus = "Server is created!!!";
