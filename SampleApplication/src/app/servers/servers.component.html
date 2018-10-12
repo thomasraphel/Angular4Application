@@ -11,3 +11,9 @@
 <p [innerText]="name"></p>
 <p>{{serverCreationStatus}}</p>
 
+<input
+ type="text"
+ (input)="onTyping($event)"/>
+
+ <p>The server name using input event binding is : {{serverName}}</p>
+

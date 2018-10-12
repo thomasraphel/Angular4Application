@@ -22,9 +22,14 @@ export class ServersComponent implements OnInit {
   allowNewServer : boolean = false;
   name : string = "thomas";
   serverCreationStatus : string = "no Server created!";
+  serverName : string = "";
 
   onCreateServer(){
     this.serverCreationStatus = "Server is created!!!";
+  }
+
+  onTyping(event : Event){
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
   
   
