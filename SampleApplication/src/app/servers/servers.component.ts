@@ -22,7 +22,7 @@ export class ServersComponent implements OnInit {
   allowNewServer : boolean = false;
   name : string = "thomas";
   serverCreationStatus : string = "no Server created!";
-  serverName : string = "";
+  serverName : string = "initial server name";
 
   onCreateServer(){
     this.serverCreationStatus = "Server is created!!!";

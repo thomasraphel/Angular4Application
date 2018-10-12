@@ -11,9 +11,13 @@
 <p [innerText]="name"></p>
 <p>{{serverCreationStatus}}</p>
 
-<input
+<!-- <input
  type="text"
- (input)="onTyping($event)"/>
+ (input)="onTyping($event)"/> -->
+
+ <input
+  type="text"
+  [(ngModel)]="serverName">
 
  <p>The server name using input event binding is : {{serverName}}</p>
 
