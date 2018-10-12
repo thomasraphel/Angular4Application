@@ -24,9 +24,12 @@ export class ServersComponent implements OnInit {
   serverCreationStatus : string = "no Server created!";
   serverName : string = "initial server name";
   showServer : boolean = false;
+  servers : Array<string> = ['test1', 'test2'];
 
   onCreateServer(){
     this.serverCreationStatus = "Server is created!!!";
+    this.servers.push('new Server');
+    
   }
 
   onTyping(event : Event){

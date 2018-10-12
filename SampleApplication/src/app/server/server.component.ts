@@ -19,6 +19,8 @@ export class ServerComponent implements OnInit {
   serverCost ; number = 1000;
   
 
+  
+
   getServerColor(){
     return this.serverStatus === 'online' ? 'green' : 'red';
   }

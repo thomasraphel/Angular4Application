@@ -1,11 +1,12 @@
-<app-server></app-server>
-<app-server></app-server>
+
 
 <!-- <button class="btn-primary" disabled>Add Server</button> -->
 <button
  class="btn-primary"
 [disabled]="!allowNewServer"
 (click) = "onCreateServer()">Allow Server</button>
+
+<app-server *ngFor="let server of servers"></app-server>
 
 
 <p [innerText]="name"></p>
