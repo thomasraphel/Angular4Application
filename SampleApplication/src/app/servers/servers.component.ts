@@ -20,6 +20,7 @@ export class ServersComponent implements OnInit {
   }
 
   allowNewServer : boolean = false;
+  name : string = "thomas";
   
   
 }
