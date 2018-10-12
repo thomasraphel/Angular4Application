@@ -12,4 +12,12 @@ export class ServerComponent implements OnInit {
   ngOnInit() {
   }
 
+  serverStatus : string = 'Online';
+  serverId : number = 200;
+  serverCost ; number = 1000;
+
+  getServerCost(){
+    return this.serverCost;
+  }
+
 }
